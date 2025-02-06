@@ -3,7 +3,7 @@ import SideNav from "../components/SideNav/SideNav";
 
 function MainLayout () {
     return (
-        <div>
+        <div className="flex font-roboto">
             <SideNav />
             <Outlet />
         </div>
