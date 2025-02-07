@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
 import SideNav from "../components/SideNav/SideNav";
+import Home from "../components/Home/Home";
 
 function MainLayout () {
     return (
         <div className="flex font-roboto">
             <SideNav />
-            <Outlet />
+            <Home />
         </div>
     );
 }

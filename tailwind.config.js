@@ -14,8 +14,11 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       boxShadow: {
-        outside: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;",
-        inside: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;"
+        custom: "rgba(180, 180, 220, 0.15) 0px -40px 80px -20px inset, rgba(20, 20, 20, 0.7) 0px 40px 80px -20px inset, rgba(0, 0, 0, 0.8) 0px 10px 20px -5px inset, rgb(0, 0, 0) 0px 20px 30px -10px;",
+        inside: "rgba(220, 220, 220, 0.45) 0 0 15px 0 inset;"
+      },
+      backgroundImage: {
+        'gradient-text': 'linear-gradient(45deg, #ff6600, #ff9900)', // Orange gradient
       },
     },
   },

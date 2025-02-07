@@ -1,8 +1,9 @@
+import HeroSection from "../HeroSection/HeroSection";
 
 function Home () {
     return (
-        <div>
-            This is home page
+        <div className="bg-[#32363b] grow">
+            <HeroSection />
         </div>
     );
 }
