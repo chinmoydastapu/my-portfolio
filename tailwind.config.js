@@ -18,7 +18,7 @@ export default {
         inside: "rgba(220, 220, 220, 0.45) 0 0 15px 0 inset;"
       },
       backgroundImage: {
-        'gradient-text': 'linear-gradient(45deg, #ff6600, #ff9900)', // Orange gradient
+        'gradient-text': 'linear-gradient(45deg, #ff6600, #ff9900)',
       },
     },
   },

@@ -12,7 +12,7 @@ function SideNav() {
     const followLinkStyles = 'w-12 h-12 p-3 rounded bg-[#1b1e22] shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-orange-400';
 
     return (
-        <div className="w-[290px] h-screen p-10 overflow-y-scroll scrollbar-hide bg-[#212428] uppercase font-playfair shrink-0">
+        <div className="sticky top-0 left-0 hidden lg:block w-[290px] h-screen p-10 overflow-y-scroll scrollbar-hide bg-[#212428] uppercase font-playfair shrink-0">
             <div className="h-52 w-52 mb-10 mx-auto rounded-full border-8 border-[#32363b] bg-cover" style={{ backgroundImage: `url(${profileImg})` }}></div>
             <div className='flex flex-col gap-8 items-start'>
                 <div className={sideMenuStyles}>
