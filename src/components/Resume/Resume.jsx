@@ -5,7 +5,7 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 
 function Resume() {
-    const [activeTab, setActiveTab] = useState(0);
+    const [activeTab, setActiveTab] = useState(1);
 
     const resumeTabs = [
         { id: 0, label: "Biography", content: <Biography /> },
