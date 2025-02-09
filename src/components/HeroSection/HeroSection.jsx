@@ -29,13 +29,13 @@ function HeroSection() {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -300, opacity: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-orange-400 inline-block font-bold bg-gradient-text text-transparent bg-clip-text italic"
+                        className="inline-block font-bold bg-gradient-text text-transparent bg-clip-text italic"
                     >
                         {words[index]}
                     </motion.span>
                 </h3>
             </div>
-            <button className="px-5 py-3 rounded bg-[#1b1e22] uppercase font-semibold shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-orange-400 flex items-center gap-2"><HiOutlineDocumentArrowDown className="w-6 h-6" /><span>download my resume</span></button>
+            <button className="px-5 py-3 rounded bg-[#1b1e22] uppercase font-semibold shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-[#ff6600] flex items-center gap-2"><HiOutlineDocumentArrowDown className="w-6 h-6" /><span>download my resume</span></button>
         </div>
     );
 }

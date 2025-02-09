@@ -28,8 +28,8 @@ function Resume() {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`px-4 py-2 text-base md:text-lg font-bold uppercase rounded transition-all duration-500 ease-in-out ${activeTab === tab.id
-                                ? "shadow-custom text-orange-400"
-                                : "hover:shadow-custom hover:text-orange-400"
+                                ? "shadow-custom text-[#ff6600]"
+                                : "hover:shadow-custom hover:text-[#ff6600]"
                                 }`}
                         >
                             {tab.label}
@@ -38,7 +38,7 @@ function Resume() {
                 </div>
 
                 {/* Tab Content */}
-                <div className="mt-5">
+                <div className="mt-5 shadow-custom p-4">
                     {resumeTabs.find((tab) => tab.id === activeTab)?.content}
                 </div>
             </div>

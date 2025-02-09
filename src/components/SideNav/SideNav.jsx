@@ -8,8 +8,8 @@ import { TfiWrite } from 'react-icons/tfi';
 import { AiOutlineMessage } from 'react-icons/ai';
 
 function SideNav() {
-    const sideMenuStyles = 'flex items-center gap-3 transition-all ease-in-out cursor-pointer hover:text-orange-400 hover:scale-105';
-    const followLinkStyles = 'w-12 h-12 p-3 rounded bg-[#1b1e22] shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-orange-400';
+    const sideMenuStyles = 'flex items-center gap-3 transition-all ease-in-out cursor-pointer hover:text-[#ff6600] hover:scale-105';
+    const followLinkStyles = 'w-12 h-12 p-3 rounded bg-[#1b1e22] shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-[#ff6600]';
 
     return (
         <div className="sticky top-0 left-0 hidden lg:block w-[290px] h-screen p-10 overflow-y-scroll scrollbar-hide bg-[#212428] uppercase font-playfair shrink-0">
