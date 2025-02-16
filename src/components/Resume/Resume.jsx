@@ -38,7 +38,7 @@ function Resume() {
                 </div>
 
                 {/* Tab Content */}
-                <div className="mt-5 shadow-custom p-4">
+                <div className="mt-5 shadow-custom p-10">
                     {resumeTabs.find((tab) => tab.id === activeTab)?.content}
                 </div>
             </div>
