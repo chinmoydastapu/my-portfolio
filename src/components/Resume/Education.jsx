@@ -48,11 +48,11 @@ const Education = () => {
 
                     <div className="ml-10 w-full">
                         <h3 className={`text-lg font-bold font-playfair transition-colors duration-500 ${hoveredIndex === idx && 'text-[#ff6600]'}`}>{edu.degree}</h3>
-                        <p className="text-sm font-semibold text-gray-400">{edu.institution}</p>
+                        <p className={`text-sm font-semibold transition-colors duration-500 ${hoveredIndex !== idx && 'text-gray-400'}`}>{edu.institution}</p>
                         <span className="shadow-custom px-3 py-1 text-xs inline-block mt-2">
                             {edu.year}
                         </span>
-                        <p className="text-gray-400 mt-3">{edu.description}</p>
+                        <p className={`mt-3 transition-colors duration-500 ${hoveredIndex !== idx && 'text-gray-400'}`}>{edu.description}</p>
                     </div>
                 </div>
             ))}

@@ -34,7 +34,7 @@ function Skills() {
     return (
         <div className="max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold text-center mb-6 font-playfair">My Technical Skills</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center text-center">
                 {hardSkills.map((skill, idx) => (
                     <CircleProgressBar key={idx} {...skill} />
                 ))}
