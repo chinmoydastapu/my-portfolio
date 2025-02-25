@@ -28,32 +28,42 @@ function SideNav() {
                         <span>expertise</span>
                     </div>
                 </Link>
-                <div className={sideMenuStyles}>
-                    <HiOutlineSquare3Stack3D className='w-6 h-6' />
-                    <span>portfolio</span>
-                </div>
+                <Link to="portfolio" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <HiOutlineSquare3Stack3D className='w-6 h-6' />
+                        <span>portfolio</span>
+                    </div>
+                </Link>
                 <Link to="resume" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
                     <div className={sideMenuStyles}>
                         <FaRegIdBadge className='w-6 h-6' />
                         <span>resume</span>
                     </div>
                 </Link>
-                <div className={sideMenuStyles}>
-                    <IoPersonOutline className='w-6 h-6' />
-                    <span>clients</span>
-                </div>
-                <div className={sideMenuStyles}>
-                    <IoPricetagsOutline className='w-6 h-6' />
-                    <span>pricing</span>
-                </div>
-                <div className={sideMenuStyles}>
-                    <TfiWrite className='w-6 h-6' />
-                    <span>blogs</span>
-                </div>
-                <div className={sideMenuStyles}>
-                    <AiOutlineMessage className='w-6 h-6' />
-                    <span>contact me</span>
-                </div>
+                <Link to="clients" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <IoPersonOutline className='w-6 h-6' />
+                        <span>clients</span>
+                    </div>
+                </Link>
+                <Link to="pricing" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <IoPricetagsOutline className='w-6 h-6' />
+                        <span>pricing</span>
+                    </div>
+                </Link>
+                <Link to="blogs" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <TfiWrite className='w-6 h-6' />
+                        <span>blogs</span>
+                    </div>
+                </Link>
+                <Link to="contact" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <AiOutlineMessage className='w-6 h-6' />
+                        <span>contact me</span>
+                    </div>
+                </Link>
             </div>
             <div className='my-10 h-[1px] bg-[#32363b]'></div>
             <h3 className='mb-5 font-semibold'>find me on</h3>
