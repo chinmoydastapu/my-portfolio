@@ -6,6 +6,7 @@ import { FaFacebookF, FaLinkedinIn, FaRegIdBadge, FaWhatsapp } from 'react-icons
 import { IoPersonOutline, IoPricetagsOutline } from 'react-icons/io5';
 import { TfiWrite } from 'react-icons/tfi';
 import { AiOutlineMessage } from 'react-icons/ai';
+import { Link } from 'react-scroll';
 
 function SideNav() {
     const sideMenuStyles = 'flex items-center gap-3 transition-all ease-in-out cursor-pointer hover:text-[#ff6600] hover:scale-105';
@@ -15,22 +16,28 @@ function SideNav() {
         <div className="sticky top-0 left-0 hidden lg:block w-[290px] h-screen p-10 overflow-y-scroll scrollbar-hide bg-[#212428] uppercase font-playfair shrink-0">
             <div className="h-52 w-52 mb-10 mx-auto rounded-full border-8 border-[#32363b] bg-cover" style={{ backgroundImage: `url(${profileImg})` }}></div>
             <div className='flex flex-col gap-8 items-start'>
-                <div className={sideMenuStyles}>
-                    <TiHomeOutline className='w-6 h-6' />
-                    <span>home</span>
-                </div>
-                <div className={sideMenuStyles}>
-                    <GiSkills className='w-6 h-6' />
-                    <span>features</span>
-                </div>
+                <Link to="home" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <TiHomeOutline className='w-6 h-6' />
+                        <span>home</span>
+                    </div>
+                </Link>
+                <Link to="expertise" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <GiSkills className='w-6 h-6' />
+                        <span>expertise</span>
+                    </div>
+                </Link>
                 <div className={sideMenuStyles}>
                     <HiOutlineSquare3Stack3D className='w-6 h-6' />
                     <span>portfolio</span>
                 </div>
-                <div className={sideMenuStyles}>
-                    <FaRegIdBadge className='w-6 h-6' />
-                    <span>resume</span>
-                </div>
+                <Link to="resume" smooth={true} duration={800} spy={true} activeClass="text-[#ff6600] scale-105">
+                    <div className={sideMenuStyles}>
+                        <FaRegIdBadge className='w-6 h-6' />
+                        <span>resume</span>
+                    </div>
+                </Link>
                 <div className={sideMenuStyles}>
                     <IoPersonOutline className='w-6 h-6' />
                     <span>clients</span>

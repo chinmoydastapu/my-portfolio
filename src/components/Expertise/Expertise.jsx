@@ -26,7 +26,7 @@ function Expertise() {
     ];
 
     return (
-        <div className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="expertise" className="flex flex-col items-center gap-10 p-5 sm:p-10">
             <div className="text-center">
                 <span className="uppercase bg-gradient-text text-transparent bg-clip-text font-bold">my expertise</span>
                 <h1 className="capitalize text-5xl font-bold mt-2 font-playfair">what i do</h1>

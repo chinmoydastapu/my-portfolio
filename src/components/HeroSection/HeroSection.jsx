@@ -5,7 +5,7 @@ function HeroSection() {
     const words = ["<Problem Solver />", "<Creative Thinker />", "<React Enthusiast />", "<Freelancer />", "<TailwindCSS Expert />", "<Frontend Developer />", "<MERN Stack Developer />"];
 
     return (
-        <div className="font-playfair h-screen flex flex-col justify-center items-center gap-10">
+        <div id="home" className="font-playfair h-screen flex flex-col justify-center items-center gap-10">
             <div className="text-center">
                 <p className="text-6xl md:text-9xl font-bold">CHINMOY</p>
                 <p className="text-6xl md:text-9xl font-bold">DAS</p>

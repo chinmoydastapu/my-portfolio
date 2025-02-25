@@ -15,7 +15,7 @@ function Resume() {
     ];
 
     return (
-        <div className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="resume" className="flex flex-col items-center gap-10 p-5 sm:p-10">
             <div className="text-center">
                 <span className="uppercase bg-gradient-text text-transparent bg-clip-text font-bold">1+ years of experience</span>
                 <h1 className="capitalize text-5xl font-bold mt-2 font-playfair">my resume</h1>
