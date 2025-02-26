@@ -3,6 +3,7 @@ import Biography from "./Biography";
 import Education from "./Education";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Heading from "../Home/Heading";
 
 function Resume() {
     const [activeTab, setActiveTab] = useState(1);
@@ -16,20 +17,17 @@ function Resume() {
 
     return (
         <div id="resume" className="flex flex-col items-center gap-10 p-5 sm:p-10">
-            <div className="text-center">
-                <span className="uppercase bg-gradient-text text-transparent bg-clip-text font-bold">1+ years of experience</span>
-                <h1 className="capitalize text-5xl font-bold mt-2 font-playfair">my resume</h1>
-            </div>
+            <Heading data={{shortText: '1+ years of experience', title: 'my resume'}} />
             <div className="w-full mx-auto">
                 {/* Tab Navigation */}
-                <div className="flex flex-wrap gap-5">
+                <div className="flex gap-5">
                     {resumeTabs.map((tab) => (
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
-                            className={`px-4 py-2 text-base md:text-lg font-bold uppercase rounded transition-all duration-500 ease-in-out ${activeTab === tab.id
-                                ? "shadow-custom text-[#ff6600]"
-                                : "hover:shadow-custom hover:text-[#ff6600]"
+                            className={`h-full px-4 py-2 text-base md:text-lg font-bold uppercase transition-colors duration-500 ${activeTab === tab.id
+                                ? "border-b-2 border-b-[#ff6600] text-[#ff6600]"
+                                : "hover:border-b-[#ff6600] hover:border-b-2 hover:text-[#ff6600]"
                                 }`}
                         >
                             {tab.label}
@@ -38,7 +36,7 @@ function Resume() {
                 </div>
 
                 {/* Tab Content */}
-                <div className="mt-5 shadow-custom p-10">
+                <div className="shadow-custom p-10">
                     {resumeTabs.find((tab) => tab.id === activeTab)?.content}
                 </div>
             </div>

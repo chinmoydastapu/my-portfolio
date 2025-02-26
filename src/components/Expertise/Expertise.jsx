@@ -2,6 +2,7 @@ import { HiOutlineCircleStack } from "react-icons/hi2";
 import ExpertiseCard from "../Cards/ExpertiseCard";
 import { FaCode } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import Heading from "../Home/Heading";
 
 function Expertise() {
     const myExpertise = [
@@ -27,10 +28,7 @@ function Expertise() {
 
     return (
         <div id="expertise" className="flex flex-col items-center gap-10 p-5 sm:p-10">
-            <div className="text-center">
-                <span className="uppercase bg-gradient-text text-transparent bg-clip-text font-bold">my expertise</span>
-                <h1 className="capitalize text-5xl font-bold mt-2 font-playfair">what i do</h1>
-            </div>
+            <Heading data={{shortText: 'what i do', title: 'my expertise'}} />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {myExpertise.map((expertise, idx) => <ExpertiseCard key={idx} data={expertise} />)}
             </div>
