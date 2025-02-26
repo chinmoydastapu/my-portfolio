@@ -1,6 +1,5 @@
 import { FaAnglesUp } from "react-icons/fa6";
 import Expertise from "../Expertise/Expertise";
-import Footer from "../Footer/Footer";
 import HeroSection from "../HeroSection/HeroSection";
 import Resume from "../Resume/Resume";
 import { Link } from "react-scroll";
@@ -28,7 +27,7 @@ function Home() {
     }, []);
 
     return (
-        <div className="bg-[#32363b] grow">
+        <div>
             <HeroSection />
             <Expertise />
             <Portfolio />
@@ -37,7 +36,6 @@ function Home() {
             <Pricing />
             <Blogs />
             <Contact />
-            <Footer />
 
             {showUpButton && (
                 <Link to="home" smooth={true} duration={1000} className="fixed right-10 bottom-10 px-5 py-3 rounded bg-[#1b1e22] uppercase font-semibold shadow-custom cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-[#16181c] hover:text-[#ff6600]">
