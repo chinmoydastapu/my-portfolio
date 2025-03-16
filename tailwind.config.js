@@ -15,7 +15,7 @@ export default {
       },
       boxShadow: {
         custom: "rgba(180, 180, 220, 0.15) 0px -40px 80px -20px inset, rgba(20, 20, 20, 0.7) 0px 40px 80px -20px inset, rgba(0, 0, 0, 0.8) 0px 10px 20px -5px inset, rgb(0, 0, 0) 0px 20px 30px -10px;",
-        inside: "rgba(220, 220, 220, 0.45) 0 0 15px 0 inset;"
+        inside: "rgb(0, 0, 0, 0.5) 0px 5px 5px 0px inset, rgba(255, 255, 255, 0.3) 0px -2px 2px 1px inset;"
       },
       backgroundImage: {
         'gradient-text': 'linear-gradient(45deg, #ff6600, #ff9900)',

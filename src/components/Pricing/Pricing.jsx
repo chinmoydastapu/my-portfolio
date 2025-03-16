@@ -25,14 +25,14 @@ function Pricing() {
         <div id="pricing" className="flex flex-col items-center gap-10 p-5 sm:p-10">
             <Heading data={{ shortText: 'my plans to provide you the best', title: 'pricing & services' }} />
             <div className="overflow-x-auto w-full shadow-custom">
-                <table className="table table-zebra">
+                <table className="table">
                     <thead>
-                        <tr>
+                        <tr className="text-lg text-gray-400">
                             <th>No.</th>
                             <th>Service</th>
-                            <th>Regular<span className="block">$5.00/hr</span></th>
-                            <th>Standard<span className="block">$8.00/hr</span></th>
-                            <th>Premium<span className="block">$10.00/hr</span></th>
+                            <th>Regular<span className="block text-[#ff6600]">$5.00/hr</span></th>
+                            <th>Standard<span className="block text-[#ff6600]">$8.00/hr</span></th>
+                            <th>Premium<span className="block text-[#ff6600]">$10.00/hr</span></th>
                         </tr>
                     </thead>
                     <tbody>
