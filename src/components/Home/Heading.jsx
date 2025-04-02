@@ -4,8 +4,8 @@ function Heading({ data }) {
 
     return (
         <div className="text-center">
-            <span className="uppercase text-[14px] bg-gradient-text text-transparent bg-clip-text font-bold">{shortText}</span>
-            <h1 className="capitalize text-5xl lg:text-6xl font-bold mt-2 font-playfair">{title}</h1>
+            <span className="uppercase text-[12px] md:text-[14px] bg-gradient-text text-transparent bg-clip-text font-bold">{shortText}</span>
+            <h1 className="uppercase text-3xl md:text-6xl font-bold md:mt-2 font-playfair">{title}</h1>
         </div>
     );
 }

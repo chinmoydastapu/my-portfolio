@@ -22,23 +22,21 @@ function Pricing() {
     ];
 
     return (
-        <div id="pricing" className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="pricing" className="flex flex-col items-center gap-10">
             <Heading data={{ shortText: 'my plans to provide you the best', title: 'pricing & services' }} />
-            <div className="overflow-x-auto w-full shadow-custom">
+            <div className="max-w-[100vw] md:w-full overflow-x-scroll scrollbar-hide shadow-custom">
                 <table className="table">
                     <thead>
-                        <tr className="text-lg text-gray-400">
-                            <th>No.</th>
+                        <tr className="text-base md:text-lg text-gray-400">
                             <th>Service</th>
                             <th>Regular<span className="block text-[#ff6600]">$5.00/hr</span></th>
                             <th>Standard<span className="block text-[#ff6600]">$8.00/hr</span></th>
                             <th>Premium<span className="block text-[#ff6600]">$10.00/hr</span></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="text-sm md:text-base">
                         {services.map((service, idx) => (
                             <tr key={idx}>
-                                <th>{service.id}</th>
                                 <td>{service.name}</td>
                                 <td>{service.regular ? <TiTick className="w-6 h-6 text-[#ff6600]" /> : <GoDotFill className="w-6 h-6 text-gray-400" />}</td>
                                 <td>{service.standard ? <TiTick className="w-6 h-6 text-[#ff6600]" /> : <GoDotFill className="w-6 h-6 text-gray-400" />}</td>

@@ -47,8 +47,8 @@ const Education = () => {
                     <div className={`absolute -left-[11px] top-0 w-6 h-6 border-4 border-[#212428] rounded-full transition-colors duration-500 ${hoveredIndex === idx ? 'bg-[#ff6600]' : 'bg-[#32363b]'}`}></div>
 
                     <div className="ml-10 w-full">
-                        <h3 className={`text-lg font-bold font-playfair transition-colors duration-500 ${hoveredIndex === idx && 'text-[#ff6600]'}`}>{edu.degree}</h3>
-                        <p className={`text-sm font-semibold transition-colors duration-500 ${hoveredIndex !== idx && 'text-gray-400'}`}>{edu.institution}</p>
+                        <h3 className={`text-lg md:text-xl font-bold font-playfair transition-colors duration-500 ${hoveredIndex === idx && 'text-[#ff6600]'}`}>{edu.degree}</h3>
+                        <h4 className={`text-sm font-semibold transition-colors duration-500 ${hoveredIndex !== idx && 'text-gray-400'}`}>{edu.institution}</h4>
                         <span className="shadow-custom px-3 py-1 text-xs inline-block mt-2">
                             {edu.year}
                         </span>

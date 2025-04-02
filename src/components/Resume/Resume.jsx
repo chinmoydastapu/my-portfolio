@@ -20,7 +20,7 @@ function Resume() {
             <Heading data={{shortText: '1+ years of experience', title: 'my resume'}} />
             <div className="w-full mx-auto">
                 {/* Tab Navigation */}
-                <div className="flex gap-5">
+                <div className="flex flex-wrap">
                     {resumeTabs.map((tab) => (
                         <button
                             key={tab.id}
@@ -36,7 +36,7 @@ function Resume() {
                 </div>
 
                 {/* Tab Content */}
-                <div className="shadow-custom p-10">
+                <div className="shadow-custom p-10 text-sm md:text-base">
                     {resumeTabs.find((tab) => tab.id === activeTab)?.content}
                 </div>
             </div>

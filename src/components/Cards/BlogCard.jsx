@@ -31,8 +31,8 @@ const BlogCard = ({ data }) => {
                     <span>{date}</span>
                 </div>
 
-                <h2 className={`mt-4 text-xl font-bold font-playfair transition-colors duration-500 ${isHovered && 'text-[#ff6600]'}`}>{title}</h2>
-                <p className={`mt-2 text-sm transition-colors duration-500 ${!isHovered && 'text-gray-400'}`}>{excerpt}</p>
+                <h2 className={`mt-4 text-lg md:text-xl font-bold font-playfair transition-colors duration-500 ${isHovered && 'text-[#ff6600]'}`}>{title}</h2>
+                <p className={`mt-2 text-sm md:text-base transition-colors duration-500 ${!isHovered && 'text-gray-400'}`}>{excerpt}</p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mt-4">

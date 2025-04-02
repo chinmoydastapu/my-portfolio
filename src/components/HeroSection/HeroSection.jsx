@@ -7,8 +7,8 @@ function HeroSection() {
     return (
         <div id="home" className="font-playfair h-screen flex flex-col justify-center items-center gap-10">
             <div className="text-center">
-                <p className="text-6xl md:text-9xl font-bold">CHINMOY</p>
-                <p className="text-6xl md:text-9xl font-bold">DAS</p>
+                <h1 className="text-6xl md:text-9xl font-bold">CHINMOY</h1>
+                <h1 className="text-6xl md:text-9xl font-bold">DAS</h1>
             </div>
             <div className="text-center">
                 <h3 className="text-lg md:text-4xl font-playfair italic font-semibold">
