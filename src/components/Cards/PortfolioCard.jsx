@@ -33,15 +33,15 @@ const PortfolioCard = ({ data }) => {
             </motion.div>
             {/* Links */}
             <motion.div
-                className="absolute top-0 right-[20px] flex justify-center gap-5"
+                className="absolute top-5 right-5 flex justify-center gap-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}>
                 <a href={github} target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="hover:text-[#ff6600] h-5 w-5 hover:scale-125 transition-transform duration-500" />
+                    <FaGithub className="hover:text-[#ff6600] h-5 w-5 transition-all duration-500" />
                 </a>
                 <a href={liveDemo} target="_blank" rel="noopener noreferrer">
-                    <FaLink className="hover:text-[#ff6600] h-5 w-5 hover:scale-125 transition-transform duration-500" />
+                    <FaLink className="hover:text-[#ff6600] h-5 w-5 transition-all duration-500" />
                 </a>
             </motion.div>
         </div>

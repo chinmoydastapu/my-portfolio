@@ -5,7 +5,7 @@ function Contact() {
     const [focusedField, setFocusedField] = useState(null);
 
     return (
-        <div id="contact" className="flex flex-col items-center gap-10 p-5">
+        <div id="contact" className="flex flex-col items-center gap-10 p-5 sm:p-10">
             <Heading data={{ shortText: 'reach me anytime', title: 'contact me' }} />
             <div className="flex flex-col gap-5 w-full p-5 md:p-10 shadow-custom">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-5">
