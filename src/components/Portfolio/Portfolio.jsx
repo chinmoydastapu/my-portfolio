@@ -8,7 +8,7 @@ function Portfolio() {
     const portfolioProjects = portfolioList;
 
     return (
-        <div id="portfolio" className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="portfolio" className="flex flex-col items-center gap-10 p-2 sm:p-10 pt-8 sm:pt-0">
             <Heading data={{ shortText: 'visit my works', title: 'my portfolio' }} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
                 {

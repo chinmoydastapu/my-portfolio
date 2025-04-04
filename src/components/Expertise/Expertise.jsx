@@ -27,7 +27,7 @@ function Expertise() {
     ];
 
     return (
-        <div id="expertise" className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="expertise" className="flex flex-col items-center gap-10 p-2 sm:p-10 pt-8 sm:pt-0">
             <Heading data={{shortText: 'what i do', title: 'my expertise'}} />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {myExpertise.map((expertise, idx) => <ExpertiseCard key={idx} data={expertise} />)}

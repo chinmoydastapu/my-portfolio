@@ -22,9 +22,9 @@ function MainLayout() {
     }, []);
 
     return (
-        <div className="flex font-roboto ">
+        <div className="flex">
             <SideNav />
-            <div className="bg-[#32363b] grow">
+            <div className="grow">
                 <Outlet />
                 <Footer />
             </div>

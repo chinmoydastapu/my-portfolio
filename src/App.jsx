@@ -3,7 +3,9 @@ import router from "./routers/routers";
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <div className="font-roboto bg-[#32363b]">
+      <RouterProvider router={router} />
+    </div>
   )
 }
 

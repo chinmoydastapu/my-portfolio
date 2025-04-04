@@ -16,18 +16,18 @@ function Resume() {
     ];
 
     return (
-        <div id="resume" className="flex flex-col items-center gap-10 p-5 sm:p-10">
-            <Heading data={{shortText: '1+ years of experience', title: 'my resume'}} />
+        <div id="resume" className="flex flex-col items-center gap-10 p-2 sm:p-10 pt-8 sm:pt-0">
+            <Heading data={{ shortText: '1+ years of experience', title: 'my resume' }} />
             <div className="w-full mx-auto">
                 {/* Tab Navigation */}
-                <div className="flex flex-wrap">
+                <div className="flex flex-col md:flex-row">
                     {resumeTabs.map((tab) => (
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
-                            className={`h-full px-4 py-2 text-base md:text-lg font-bold uppercase transition-colors duration-500 ${activeTab === tab.id
-                                ? "border-b-2 border-b-[#ff6600] text-[#ff6600]"
-                                : "hover:border-b-[#ff6600] hover:border-b-2 hover:text-[#ff6600]"
+                            className={`h-full p-4 text-base font-bold uppercase shadow-inside transition-colors duration-500 ${activeTab === tab.id
+                                ? "text-[#ff6600]"
+                                : "hover:text-[#ff6600]"
                                 }`}
                         >
                             {tab.label}
@@ -36,7 +36,7 @@ function Resume() {
                 </div>
 
                 {/* Tab Content */}
-                <div className="shadow-custom p-10 text-sm md:text-base">
+                <div className="shadow-inside p-10 text-sm md:text-base">
                     {resumeTabs.find((tab) => tab.id === activeTab)?.content}
                 </div>
             </div>

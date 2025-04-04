@@ -8,7 +8,7 @@ function Blogs() {
     const blogs = blogList;
     
     return (
-        <div id="blogs" className="flex flex-col items-center gap-10 p-5 sm:p-10">
+        <div id="blogs" className="flex flex-col items-center gap-10 p-2 sm:p-10 pt-8 sm:pt-0">
             <Heading data={{shortText: 'contents i have written', title: 'my blogs'}} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {blogs.slice(0, 2).map((blog, idx) => <BlogCard key={idx} data={blog} />)}

@@ -22,9 +22,9 @@ function Pricing() {
     ];
 
     return (
-        <div id="pricing" className="flex flex-col items-center gap-10 md:p-10">
+        <div id="pricing" className="flex flex-col items-center gap-10 md:p-10 pt-8 md:pt-0">
             <Heading data={{ shortText: 'my plans to provide you the best', title: 'pricing & services' }} />
-            <div className="max-w-[100vw] md:w-full overflow-x-scroll scrollbar-hide shadow-custom">
+            <div className="max-w-[97vw] md:w-full overflow-x-scroll scrollbar-hide shadow-custom">
                 <table className="table">
                     <thead>
                         <tr className="text-base md:text-lg text-gray-400">
